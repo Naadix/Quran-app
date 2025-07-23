@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Base Style Start */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Amiri", serif;
+}
+
+a,
+button {
+    all: unset;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+a:active,
+button:active {
+    scale: 0.9;
+}
+/* Base Style End */
+
+/* Utilities Style Start */
+@layer utilities{
+.my-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.my-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-out;
+}
+}
+/* Utilities Style End */
